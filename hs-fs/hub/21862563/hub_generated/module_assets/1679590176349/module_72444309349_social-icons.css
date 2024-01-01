@@ -1,0 +1,92 @@
+.social-icon ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+.social-icon ul li{
+  display: inline-block;
+  margin-bottom: 8px;
+  position: relative;
+}
+.social-icon ul li a{
+  border-radius: 20px 20px 20px 20px;
+  height: 28px;
+  width: 28px;
+  padding: 0;
+  box-sizing: content-box;
+  vertical-align: middle;
+  margin-right: 4px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  line-height: 30px;
+}
+.social-icon ul li:last-child a {
+  margin: 0;
+}
+.social-icon ul li a:before {
+  content: "\e051";
+  speak: none;
+  font-style: normal;
+  transition: color .3s;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0 0;
+  direction: ltr;
+  font-family: "Socicon";
+}
+.social-icon .et-social-twitter a:before {
+  content: "\e094";
+  font-family: ETmodules;
+}
+.social-icon .et-social-linkedin a:before {
+  content: "\E09D";
+  font-family: ETmodules;
+}
+.social-icon .et-social-dbdb-facebook a:before {
+  content: "\e028";
+}
+.social-icon .et-social-dbdb-telegram a:before {
+/*   content: "\e087"; /* <- Telegram icon */ 
+  content: "\e01d"; /* <- Discord icon */
+  font-family: "Socicon"; /* Necessary for Discord, hide for Telegram */
+}
+.social-icon .et-social-dbdb-instagram a:before {
+  content: "\e044";
+}
+
+.social-icon ul li a:hover:before {
+  opacity:0.9;
+}
+
+
+@media only screen and (max-width: 980px){
+  .social-icon ul {
+    text-align: left;
+  }
+  .social-icon ul li a {
+    font-size: 12px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .social-icon ul li a {
+    font-size: 9px;
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+
+
+
